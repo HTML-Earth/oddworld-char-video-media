@@ -1,0 +1,38 @@
+body{
+    background-color: #222;
+    margin: 1vw;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+
+.container .gallery a img {
+  float: left;
+  border: 2px solid #888;
+  height: 9vw;
+  width: 16vw;
+  object-fit: cover;
+  -webkit-transition: -webkit-transform .15s ease;
+  -moz-transition: -moz-transform .15s ease;
+  -o-transition: -o-transform .15s ease;
+  -ms-transition: -ms-transform .15s ease;
+  transition: transform .15s ease;
+  position: relative;
+}
+
+.container .gallery a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 5;
+}
+
+.clear {
+  clear: both;
+  float: none;
+  width: 100%;
+}
